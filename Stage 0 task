@@ -1,1 +1,57 @@
-# tage 0 tasks
+# stage 0 task
+# Response approach with list nested data structure
+# first create each member list nested data
+team_member_1 = [
+    ["MEMBER", 1 ],
+    ["Name", "Omotayo Anick Jacquelina BARA"],
+    ["Slack username", "Anick"],
+    ["Email", "omotayojecolia@gmail.com"],
+    ["Hobby", "Music"],
+    ["Country", "Benin"],
+    ["Discipline", "Biology"],
+    ["Programming language", "Pyton"]
+]
+
+team_member_2 = [
+    ["MEMBER", 2 ],
+    ["Name", "Aishat Adebola Lawal"],
+    ["Slack username", "Aishat"],
+    ["Email", "aishatadebola76@gmail.com"],
+    ["Hobby", "Reading"],
+    ["Country", "Nigeria"],
+    ["Discipline", "Molecular biology"],
+    ["Programming language", "Pyton"]
+]
+
+# combine all the member data and print
+team_alanine_pyton_L = team_member_1 + team_member_2
+print(team_alanine_pyton_L)
+
+"""
+While this data strusture helps reply to the task, 
+the output format from print is difficult to read. 
+The easier way for organizing the team member data in a readible way is by using dictionnary data structure
+"""
+
+# Response approach with dictionnary data structure
+team_alanine_pyton_D = {
+    "Team member 1" : {
+        "Name" : "Omotayo Anick Jacquelina BARA",
+        "Slack username" : "Anick",
+        "Email" : "omotayojecolia@gmail.com",
+        "Hobby" : "Music",
+        "Country": "Benin",
+        "Discipline": "Biology",
+        "Programming language": "Pyton" 
+    },
+    "Team member 2" : {
+        "Name" : "Aishat Adebola Lawal",
+        "Slack username" : "Aishat",
+        "Email" : "aishatadebola76@gmail.com",
+        "Hobby" : "Reading",
+        "Country" : "Nigeria",
+    "Discipline" : "Molecular biology",
+    "Programming language" : "Pyton"
+    }
+}
+print(team_alanine_pyton_D)
